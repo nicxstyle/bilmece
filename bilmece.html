@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            display: flex;
+            height: auto;
+            justify-content: center;
+            background-color: crimson;
+        }
+        h1{
+            color: white;
+            font-weight: 700;
+        }
+        .container{
+            width: 100%;   
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .soru{
+            font-weight: 700;
+            text-align: center;
+            background-color: wheat;
+            padding: 0px 30px;
+            margin: 20px 0;
+            border-radius: 30px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        .soru p{
+            font-size: 20px;
+            color: black;
+        }
+        .siklar{
+            font-size: 20px;
+        }
+        
+        .btn{
+            margin-top: 30px;
+            background-color:skyblue;
+            border: 2px solid black;
+            border-radius: 30px;
+            padding:5px 10px;
+        }
+        .bilmece{
+            display: none;;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .basla{
+            font-size: 25px;
+            background-color: red;
+            color: white;
+            padding: 15px 20px;
+            border: 1px solid white;
+            border-radius: 30px;
+            margin-top: 50px;
+        }
+        .basla:hover{
+            cursor: pointer;
+        }
+        .bitir{
+            display: none;
+        }
+        
+    </style>
+</head>
+
+
+
+<body>
+    <header>
+        <h1>Bilmece</h1>
+    </header>
+
+        <div class="container">
+            <button class="basla">Oyuna Başla</button>
+
+            <form class="bilmece">
+                <h2>Soru</h2>
+            <div class="soru">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit accusamus asperiores esse consectetur iusto corrupti!</p>
+            </div>
+            <div class="siklar">
+                <input type="radio" name="cevap" id="" value="A">A
+                <input type="radio" name="cevap" id="" value="B">B
+                <input type="radio" name="cevap" id="" value="C">C
+                <input type="radio" name="cevap" id="" value="D">D
+            </div>
+            <button class="btn" name="sonraki">Sonraki</button>
+            <input type="submit" class="btn bitir" name="bitir" value="Bitir">
+
+        </div>
+    </form>
+</body>
+<script src="app.js"></script>
+</html>
