@@ -1,2 +1,1 @@
-# bilmece
-bilmece
+javascript ile basit bilmece uygulaması
